@@ -3,6 +3,8 @@ import { ManageUser } from "@/ui/atoms";
 
 import { DashboardSectionOrganisms } from "@/ui/organisms";
 
+export const dynamic = "force-dynamic";
+
 export default async function DashboardView() {
   const response = await TextService.getTexts();
   const categories = await TextService.getCategories();
