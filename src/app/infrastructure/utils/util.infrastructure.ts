@@ -1,5 +1,6 @@
 export class UtilInfrastructure {
-  private baseUrl: string = "/api";
+  private baseUrl: string =
+    process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000/api";
 
   constructor(baseUrlClient?: string) {
     this.baseUrl = baseUrlClient || this.baseUrl;
